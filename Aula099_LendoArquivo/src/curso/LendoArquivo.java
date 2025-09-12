@@ -1,4 +1,8 @@
 package curso;
+/*
+ * O Menta 3D - "Como ler arquivos de texto em Java utilizando a classe Scanner"
+ * resultado da co nsulta no youtube "gravar lea arquivo txt scanner java eclipse" 
+ */
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
