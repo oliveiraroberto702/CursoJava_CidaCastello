@@ -17,15 +17,15 @@ public class PrincipalArquivoTexto {
 		
               
 		Path caminho =  Path.of("c:/ws-roberto/text02.txt");
-		/*
+		
 		if(Files.notExists(caminho)) {
 			Files.createFile(caminho);
 		}
 		
-		String texto = "oi tudo bem?";
+		//String texto = "oi tudo bem?";
 		
-		byte[] bytes = texto.getBytes();
-		Files.write(caminho, bytes);
+		//byte[] bytes = texto.getBytes();
+		//Files.write(caminho, bytes);
 		
 		
 		// Files.writeString(caminho, texto1);   alternativo
@@ -43,7 +43,7 @@ public class PrincipalArquivoTexto {
 		System.out.println(texto);
 		*/
 		
-		Files.delete(caminho);
+		// Files.delete(caminho);
 		
 		
 		
