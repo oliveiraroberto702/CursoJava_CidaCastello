@@ -15,13 +15,13 @@ public class PrincipalArquivoTexto {
 
 	public static void main(String[] args) throws IOException {
 		
-              
+          /*    
 		Path caminho =  Path.of("c:/ws-roberto/text02.txt");
 		
 		if(Files.notExists(caminho)) {
 			Files.createFile(caminho);
 		}
-		
+		*/
 		//String texto = "oi tudo bem?";
 		
 		//byte[] bytes = texto.getBytes();
@@ -29,7 +29,7 @@ public class PrincipalArquivoTexto {
 		
 		
 		// Files.writeString(caminho, texto1);   alternativo
-		*/
+	
 		
 		/*
 		List<String> strings = Files.readAllLines(caminho);
