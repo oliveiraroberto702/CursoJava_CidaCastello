@@ -30,9 +30,9 @@ public class Ex024Desafio {
 		descricao = sc.nextLine();
 		System.out.print("Quantidade: ");
 		quantidade = Integer.parseInt(sc.nextLine());
-		System.out.print("Preço Unitário: ");
+		System.out.print("Preço Unitário R$: ");
 		precoUnitario = Double.parseDouble(sc.nextLine());
-		System.out.print("Taxa de Imposto: ");
+		System.out.print("Taxa de Imposto %: ");
 		taxaDeImposto = Double.parseDouble(sc.nextLine());
 		
 		// processamento - calculo dos valores
