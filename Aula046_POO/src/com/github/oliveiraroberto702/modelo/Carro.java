@@ -3,15 +3,15 @@ package com.github.oliveiraroberto702.modelo;
 public class Carro {
 
 	// variáveis de instância (atributos, campos)
-	// tipo - nome da variaável de instância (atributo)
+	// modificador de acesso - tipo - nome da variável de instância
 	
-	String marca;
-	String modelo;
-	int anoFabricacao;
-	String cor;
-	double preco;
+	public String marca;
+	public String modelo;
+	public  int anoFabricacao;
+	public String cor;
+	public double preco;
 	
 	
 	
-	// métodos
+	// métodos - construtores
 }
