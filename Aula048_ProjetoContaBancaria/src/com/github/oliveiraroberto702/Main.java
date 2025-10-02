@@ -1,39 +1,38 @@
 package com.github.oliveiraroberto702;
 
+import java.util.Locale;
+
 import com.github.oliveiraroberto702.objeto.ContaBancaria;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// instanciar a classe ContaBancaria
-		//criar o objeto tipo ContaBancaria
+		Locale.setDefault(Locale.US);
+		// instancia objeto 1
 		ContaBancaria conta = new ContaBancaria();
-		ContaBancaria conta2 = new ContaBancaria();
-		
-		// conta 1
+		conta.nome = "Rafa";
+		conta.numeroDaConta = 	"1234-5";
 		conta.agencia = "123-4";
-		conta.numeroDaConta = "7683.678-0";
-		conta.nome = "Roberto V Oliveira";
-		conta.saldo = 12789.0;
-		
-	
+		conta.saldo = 120.90;
 		
 		System.out.println("Nome: " + conta.nome);
-		System.out.println("Nº Conta: " + conta.numeroDaConta);
-		System.out.println("Agência: " + conta.agencia);
+		System.out.println("Número da Conta: " + conta.numeroDaConta);
+		System.out.println("Agencia: " + conta.agencia);
 		System.out.println("Saldo: " + conta.saldo);
+		System.out.println("-----------------------------------");
+		// instancia objeto 2 da classe ContaBancaria
+		ContaBancaria conta1 = new ContaBancaria();
+		conta1.nome = "Bela";
+		conta1.numeroDaConta = 	"67899-0";
+		conta1.agencia = "567-9";
+		conta1.saldo = 350000.00;
 		
-			// conta 2
-			conta2.agencia = "123-4";
-			conta2.numeroDaConta = "512.677-9";
-			conta2.nome = "Carlos Roberto da Silva";
-			conta2.saldo=1456756.0;
-			
-			System.out.println("Nome: " + conta2.nome);
-			System.out.println("Nº Conta: " + conta2.numeroDaConta);
-			System.out.println("Agência: " + conta2.agencia);
-			System.out.println("Saldo: " + conta2.saldo);
-
+		System.out.println("Nome: " + conta1.nome);
+		System.out.println("Número da Conta: " + conta1.numeroDaConta);
+		System.out.println("Agencia: " + conta1.agencia);
+		System.out.println("Saldo: " + conta1.saldo);
+		System.out.println("-----------------------------------");
+		
 	}
 
 }
