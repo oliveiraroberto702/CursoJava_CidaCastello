@@ -2,7 +2,7 @@ package com.github.oliveiraroberto702;
 
 import java.util.Locale;
 
-import com.github.oliveiraroberto702.objeto.ContaBancaria;
+import com.github.oliveiraroberto702.modelo.ContaBancaria;
 
 public class Main {
 
