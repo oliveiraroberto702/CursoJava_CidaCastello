@@ -14,7 +14,7 @@ public class App {
 		conta.setNumeroDaConta("123.456-7");
 		conta.setAgencia("123-4");
 		conta.setSaldo(125000.00);
-		conta.setAtiva(false);
+		conta.setAtiva(true);
 		// getters -- pega os valores setados
 		System.out.println("Nome: " + conta.getNome());
 		System.out.println("Número da Conta: " + conta.getNumeroDaConta());
@@ -23,11 +23,13 @@ public class App {
 		System.out.println(conta.IsActive() ? "Ativa? SIM" : "Ativa? NÃO");
 			
 		// depositando valor na conta bancária
-	//	for (int i =0; i < 4; i++) {
-			conta.depositar(1000.0);
-			System.out.println(conta.IsActive() && conta.getSaldo() > 0 ? "Novo Saldo: R$ " + conta.getSaldo() : " ");	
-	//	}
+		double deposito = 1000.0;
+		conta.depositar(deposito);
 		
+		System.out.println(conta.IsActive() && conta.getSaldo() > 0 ? String.format("Deposito de R$ %.2f  ==> Novo Saldo: R$ %.2f%n", deposito, conta.getSaldo()) : " ");	
+		double retirada = -126000.00;
+		conta.sacar(retirada);
+		System.out.println(conta.IsActive() && conta.getSaldo() >= 0 ? String.format("Saque de R$ %.2f ==> Novo Saldo R$ %.2f%n", retirada, conta.getSaldo()) : " ");	
 	}
 
 }

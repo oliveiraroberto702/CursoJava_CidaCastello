@@ -61,16 +61,30 @@ public class ContaBancaria {
 			JOptionPane.showMessageDialog(null, "Conta Desativada!");
 			return;
 		} else 	if(valor <= 0 ) {
-			JOptionPane.showMessageDialog(null, "Valor R$ " + valor + " para depósito inválido!");
+			JOptionPane.showMessageDialog(null, "Valor R$ " + valor + " inválido!");
 			return;
 		} else {
 		
-			saldo = saldo + valor;
+			saldo = saldo + valor; // saldo -= valor
 		}
 		
 	}
 	
 	public void sacar(double valor) {
+		if(!ativa) {
+			JOptionPane.showMessageDialog(null, "Conta Desativada!");
+			return;
+		} else 	if(valor <= 0 ) {
+			JOptionPane.showMessageDialog(null, "Valor R$ " + valor + " inválido!");
+			return;
+		} else if (saldo < valor) {
+			JOptionPane.showMessageDialog(null, "Saldo Insuficiente de R$ " + saldo + "para retirada de R$ " + valor);
+			return;
+			
+		} else {
+			saldo -= valor;  // saldo = saldo - valor
+		}
+
 		
 	}
 }
