@@ -1,6 +1,6 @@
 package com.github.oliveiraroberto702;
 
-import com.github.oliveiraroberto702.objeto.PessoaFisica;
+import com.github.oliveiraroberto702.modelo.PessoaFisica;
 
 public class Main {
 

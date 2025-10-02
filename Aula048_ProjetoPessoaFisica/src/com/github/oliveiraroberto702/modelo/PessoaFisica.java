@@ -1,4 +1,4 @@
-package com.github.oliveiraroberto702.objeto;
+package com.github.oliveiraroberto702.modelo;
 
 public class PessoaFisica {
 	
